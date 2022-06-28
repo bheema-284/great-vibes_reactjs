@@ -1,27 +1,84 @@
+
+
 .data{
-  width: 80%;
+  width: 40%;
   min-height: 240px;
   margin: auto;
   padding-left: 10px;
-  margin-top: 10px;
+  margin-bottom: 10px;
   border: 1px solid black;
 }
 #h1{
   background-color: aqua;
+  text-align: center;
 }
-#formdata{
-  
-  width: 30%;
-  height: 340px;
+#formdata{  
+  width: 100%; 
+  height: auto;
   margin: auto;
   background-color: rgba(85, 253, 208, 0.763);
+}
+.formdata{  
+  width: 30%; 
+  min-height: 340px; 
+  margin: auto;
+  background-color: rgba(129, 153, 74, 0.763);
 }
 #da{
   display: flex;
   justify-content: space-around;
   padding-top: 50px;  
 }
-.btns{
-  width: 20%;
+.bns{
+display: flex;
+gap: 5px;
 margin: auto;
+}
+.btns{
+width: 10%;  
+margin: auto;
+}
+.home{
+ height: 50px;
+ width: 100%;
+ background-color: black;
+ color: white;
+}
+
+ .btnsss{  
+  width: 10%;
+  margin: auto;
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+ }
+ .buttons{
+background-color: tomato;
+padding: 5px;
+border-radius: 5px;
+ }
+ .a{
+   font-size: 18px;
+   color: tomato;  
+ }
+ .b{
+  font-size:16px;
+  color: rgb(37, 36, 36);
+}
+input{
+  width: 200px;
+  height: 20px;
+  background-color: rgb(186, 236, 231);
+  border-radius: 5px;
+  margin-bottom: 18px;
+  border: transparent;
+  
+}
+textarea{
+  width: 200px;
+  margin-top: 5px;
+  min-height: 60px;
+  background-color: rgb(186, 236, 231);
+  border-radius: 5px;
+  border: transparent;
 }

@@ -43,13 +43,13 @@ useEffect(() => {
             {' '}
             <div className="data">
               <div key={e.id}>
-                <h4>Name:{e.name}</h4>
-                <p>Age:{e.email}</p>
-                <p>Mobile:{e.mobile}</p>
-                <p>City:{e.city}</p>
-                <p>State:{e.state}</p>
-                <p>Country:{e.country}</p>
-                <p>Message:{e.message}</p>
+              <p className='a'>Name:<span className='b'>{e.name}</span></p>
+              <p className='a'>Email:<span className='b'>{e.email}</span></p>
+              <p className='a'>Mobile:<span className='b'>{e.mobile}</span></p>
+              <p className='a'>City:<span className='b'>{e.city}</span></p>
+              <p className='a'>State:<span className='b'>{e.states}</span></p>
+              <p className='a'>Country:<span className='b'>{e.country}</span></p>
+              <p className='a'>Message:<span className='b'>{e.message}</span></p>                
               </div>
             </div>
           </div>
@@ -57,6 +57,7 @@ useEffect(() => {
       })}
      
       <div className="btns">
+      <div className="bns">
       {loading && <div>loading ...</div>}
       <button
         disabled={loading || page === 1}
@@ -66,6 +67,7 @@ useEffect(() => {
       <button disabled={loading || !data} onClick={() => setPage(page + 1)}>
         NEXT
       </button>
+      </div>
       <div>Current page: {page}</div>
       </div>
     </>

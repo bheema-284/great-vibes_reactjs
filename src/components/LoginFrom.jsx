@@ -7,20 +7,28 @@ export const LoginForm = () => {
   const navigate = useNavigate(); 
   return (
     <div id="formdata">
+      <div className="formdata">
       <div id="da">
         <div>
           <label >Name:</label>
           <br />
+          <br />
           <label >Email:</label>
+          <br />
           <br />
           <label >mobile:</label>
           <br />
+          <br />
           <label >State:</label>
+          <br />
           <br />
           <label > City:</label>
           <br />
+          <br />
           <label >Country:</label>
           <br />
+          <br />
+          
           <label >Message:</label>
         </div>
         <div>
@@ -94,7 +102,7 @@ export const LoginForm = () => {
           />
           <br />
           <button
-            style={{ width: '60px', backgroundColor: '#F6FFA4' }}
+            style={{ width: '80px', backgroundColor: '#F6FFA4',borderRadius: '5px' ,border:'transparent',cursor: 'pointer'}}
             disabled={!name && !email && !mobile && !states && !city && !country && !mobile}
             onClick={() => {
               handleSubmit();
@@ -102,6 +110,7 @@ export const LoginForm = () => {
             >
             submit
           </button>
+        </div>
         </div>
       </div>
     </div>

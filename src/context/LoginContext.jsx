@@ -48,7 +48,7 @@ export function LoginContextProvider({ children }) {
 
 
   //post data
-  const handleSubmit = ()=>{
+  const handleSubmit = ()=>{    
     const url = 'http://localhost:8080/users';      
       const requestOptions = {
         method: 'POST',
@@ -62,7 +62,16 @@ export function LoginContextProvider({ children }) {
         .then(data => dispatch({data}));
     
 }
-   
+
+// const handleSubmit = ()=>{    
+//   const url = 'http://localhost:8080/users';        
+//   axios.post(url)  
+//   .then(data => dispatch({data}))
+//   .catch(error => {     
+//       console.log(error);
+//   });
+  
+// }
 
   return (
     <LoginContext.Provider
