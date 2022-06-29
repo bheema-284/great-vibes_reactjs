@@ -18,6 +18,7 @@ I used React Js, CSS, HTML.
 6. install npm packages
 8. Add command npm run dev
 9. View in browser(http://localhost:3000) you can able to see the features.
+10. run json-server command json-server --watch db.json --port 8080
 
 # 4. Deployed Link:
 https://great-vibes-loginform.netlify.app/
