@@ -18,25 +18,25 @@ const Registration = () => {
     const handleSubmitter = (e)=>{
       e.preventDefault()
       if(formData.name == ""){
-        return seterrorMessage("Please Enter the Name")
+        return seterrorMessage("Enter the Name")
       }
       if(formData.email == ""){
-        return seterrorMessage("Please Enter the Email")
+        return seterrorMessage("Enter the Email")
       }
       if(formData.mobile == ""){
-        return seterrorMessage("Please Enter the Mobile")
+        return seterrorMessage("Enter the Mobile")
       }
       if(formData.country == ""){
-        return seterrorMessage("Please Enter the Country")
+        return seterrorMessage("Enter the Country")
       }
       if(formData.state == ""){
-        return seterrorMessage("Please Enter the State")
+        return seterrorMessage("Enter the State")
       }
       if(formData.city == ""){
-        return seterrorMessage("Please Enter the City")
+        return seterrorMessage("Enter the City")
       }
       if(formData.message == ""){
-        return seterrorMessage("Please Enter the Message")
+        return seterrorMessage("Enter the Message")
       }
       alert(`Hello ${formData.name}, you have registred successfully..!`)
       
@@ -80,7 +80,7 @@ const Registration = () => {
                 <br />
                 <input 
                   id='email' 
-                  type="text" 
+                  type="email" 
                   placeholder='Enter Email' 
                   onChange={handleChange}
                   value={formData.email}
@@ -89,7 +89,7 @@ const Registration = () => {
                 <br />
                 <input 
                   id='mobile' 
-                  type="number" 
+                  type="mobile" 
                   placeholder='Enter Mobile Number' 
                   onChange={handleChange}
                   value={formData.mobile}
@@ -116,13 +116,19 @@ const Registration = () => {
                     value={formData.state}
                 >
                   <option value="">Select State</option>
-                  <option value="Tamilnadu">Tamilnadu</option>
-                  <option value="Andhra">Andhra Pradesh</option>
-                  <option value="Kerala">Kerala</option>
-                  <option value="Delhi">Delhi</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="JK">Jummu </option>
                   <option value="Karnataka">Karnataka</option>
                   <option value="Mumbai">Mumbai</option>
+                  <option value="MP">Madhya Pradesh</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="UP">Uttar Pradesh</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Andhra">Andhra Pradesh</option>   
+                  <option value="Tamilnadu">Tamilnadu</option>                       
                   <option value="Rajastan">Rajastan</option>
+                  
                 </select>
                 <br />
                 <select 
@@ -131,13 +137,19 @@ const Registration = () => {
                     value={formData.city}
                 >
                   <option value="">Select City</option>
+                  <option value="TG">Hyderabad</option>
                   <option value="Tamilnadu">Chennai</option>
-                  <option value="Andhra">Salem</option>
+                  <option value="Andhra">Vizag</option>
                   <option value="Kerala">Erode</option>
-                  <option value="Delhi">Dharmapuri</option>
-                  <option value="Karnataka">Coimbatore</option>
-                  <option value="Mumbai">Kanyakumari</option>
-                  <option value="Rajastan">Trichi</option>
+                  <option value="Andhra">Vijayawada</option>
+                  <option value="TG">Mahabubabad</option>                  
+                  <option value="Delhi">Adilabad</option>
+                  <option value="TG">Warangal</option>
+                  <option value="Karnataka">Hanmakonda</option>
+                  <option value="TG">Rangareddy</option>
+                  <option value="Mumbai">Karimnagar</option>
+                  <option value="TG">Medak</option>
+                  <option value="Rajastan">Nallagonada</option>
                 </select>
                 <br />
                 <textarea 
@@ -149,7 +161,7 @@ const Registration = () => {
                 <br />
                 <button 
                   id='submit'
-                >REGISTER</button>
+                >SUBMIT</button>
               </form>
         </div>
         <div id='bottom_div'></div> 
