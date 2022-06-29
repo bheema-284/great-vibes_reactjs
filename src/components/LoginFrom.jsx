@@ -35,7 +35,7 @@ export const LoginForm = () => {
           <input
             type="text"
             placeholder="Enter Name"
-            required={true}
+            required
             value={name}
             onChange={(e) =>
               dispatch({ type: 'CHANGE_NAME', payload: e.target.value })
@@ -45,7 +45,7 @@ export const LoginForm = () => {
           <input
             type="email"
             placeholder="Enter Email"
-            required={true}
+            required
             value={email}
             onChange={(e) =>
               dispatch({ type: 'CHANGE_EMAIL', payload: e.target.value })
