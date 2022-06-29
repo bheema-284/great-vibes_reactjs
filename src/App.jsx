@@ -4,14 +4,16 @@ import './App.css'
 import { Home } from './components/Home';
 import { Users } from './components/Users';
 import {LoginForm} from "./components/LoginFrom"
+import Registration from "./components/Form"
 function App() {  
   return (
     <div className="App">
-      <Home />
+      {/* <Home />
       <Routes>                
         <Route path="/registration" element={<LoginForm />}></Route>        
         <Route path="/users" element={<Users />}></Route>
-      </Routes>
+      </Routes> */}
+      <Registration/>
     </div>
   );
 }
