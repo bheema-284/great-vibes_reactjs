@@ -20,4 +20,4 @@ I used React Js, CSS, HTML.
 12. enter user detatils you able to see all users details when you click on users buttons .
 
 # 4. Deployed Link:
-https://great-vibes-loginform.netlify.app/
+https://bheemas-form.netlify.app/
